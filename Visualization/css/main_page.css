@@ -1,0 +1,47 @@
+
+body{
+  background-color: #fbf9f9;
+  font-family: Times New Roman, Times, Georgia, serif;
+}
+
+.navbar-default{
+  font-family: sans-serif, Georgia, Times New Roman, Times, serif;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+#landing-link{
+  font-family: Times New Roman, Times, Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #47d2b8;
+}
+
+h1{
+  font-size: 28px;
+  font-weight: bold;
+  color: #47d2b8; /*#47d2b8*/
+  margin: 0 0 0 0;
+}
+
+h2{
+  font-size: 28px;
+  font-weight: bold;
+  color: #47d2b8;
+  margin-bottom: 0;
+}
+
+#p_list{
+  list-style-type:"square";
+  list-style-position:inside;
+  padding:20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p1,p2{
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}

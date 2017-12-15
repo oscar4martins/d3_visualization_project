@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp -->
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Plots</title>
+  
+  <!--reset stylesheet -->
+  <link type="text/css" rel="stylesheet" href="./css/reset.css">
+
+  <!-- bootstrapcdn stylesheet -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+  
+  <!-- landing page stylesheet  -->
+  <link type="text/css" rel="stylesheet" href="./css/main_page.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header" >
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="landing-link" href="#">Data Journalism and D3</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.google.com" target="_blank">Google Search</a></li>
+              <li><a href="#"</a></li>
+              <li><a href="#"</a></li>
+            </ul>
+          </li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+      <!-- navbar-collapse -->
+    </div>
+    <!-- container-fluid -->
+  </nav>
+
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container-fluid">
+    <!-- Our columns function in rows. -->
+    <div class="row">
+      <!-- Columns have 12 areas of width to work with. -->
+      <!-- (12/12) of screen -->
+      <div class="col-md-12" id="col-12">
+        <iframe width="980" height="550" src="./html/d3_A.html" frameborder="0" ></iframe>
+        <h2>Chart Analysis</h2>
+        <p id="p1"> 
+        When we look at scatterplot, we should be able to describe the association we see between the variables.  A quick description of the association in a scatterplot should always include a description of the form, direction, and strength of the association, along with the presence of any outliers.
+        </p>
+          <ul id="p_list">
+            <li>Form: Is the association linear or nonlinear?</li>
+            <li>Direction: Is the association positive or negative?</li>
+            <li>Strength: Does the association appear to be strong, moderately strong, or weak?</li>
+          </ul>
+        <p id="p2">
+        The x-axis data for marital status (single) came from the Census Bureau's American Community Survey, and the y-axis (drink alcohol) is from the Census Bureau's Behavior Risk Factor Surveillance System.  Prior to plotting the chart, a correlation check was performed in excel using the CORREL function and that yielded a value of 0.27 which translates to a weak correlation.  A value of -0.5 to 0.5 indicates a moderate correlation, so there are better choices besides single and drinks alcohol, but after going through several trials, this pair had one of the highest correlation numbers I found at first.  Looking at the scatter plot, there is a non-linear grouping, but I would say it is an upward and positive association with one outlier.  The majority of data points are above 40 percent on the y-axis, and between 27 and 40 percent on the x-axis, so there is weak to moderate association of single people consuming alcohol which makes sense to me.  Is this result just random chance or really representative? 
+        </p>
+      <!-- div - col 12 end -->  
+      </div>
+    <!-- div - row end -->
+    </div>
+  <!-- div container end -->
+  </div>
+
+  <!-- jquery file  -->
+  <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+    <!-- bootstrap javascript file -->
+  <script type="text/javascript" src="./js/bootstrap.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  
+</body>
+
+</html>	
